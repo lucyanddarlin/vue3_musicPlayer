@@ -8,8 +8,8 @@ import type {
   Method,
 } from "axios";
 import qs from "qs";
-
 import type { apiKeyTypes, apiKeyDataType } from "@/utils/api";
+
 type ResultDataType = apiKeyDataType[apiKeyTypes];
 
 interface newAxiosInstance extends AxiosInstance {

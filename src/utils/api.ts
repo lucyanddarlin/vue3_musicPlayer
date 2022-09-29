@@ -28,48 +28,10 @@ import type {
 import type { PlayListDetail } from "@/modules/apiDataType/playListData";
 import type { IArtist, IArtistDetail } from "@/modules/apiDataType/artist";
 import type { IAlbum } from "@/modules/apiDataType/album";
-import type {
-  IIntroduction,
-  ITopic,
-  ITopicTopic,
-} from "@/modules/apiDataType/descData";
+import type { IIntroduction, ITopic } from "@/modules/apiDataType/descData";
 import type { ITag, PlaylistHighQuality } from "@/modules/apiDataType/tags";
 
-const apiList = {
-  "countries/code/list": "/countries/code/list",
-  "/search/hot/detail": "/search/hot/detail",
-  "/search/suggest": "/search/suggest",
-  "/login/cellphone": "/login/cellphone",
-  "/login/qr/key": "/login/qr/key",
-  "/login/qr/create": "/login/qr/create",
-  "/login/qr/check": "/login/qr/check",
-  "/login/status": "/login/status",
-  "/banner": "/banner",
-  "/personalized": "/personalized",
-  "/personalized/newsong": "/personalized/newsong",
-  "/personalized/mv": "/personalized/mv",
-  "/song/url": "/song/url",
-  "/song/detail": "/song/detail",
-  "/personalized/privatecontent/list": "/personalized/privatecontent/list",
-  "/mv/url": "/mv/url",
-  "/toplist/detail": "/toplist/detail",
-  "/playlist/detail": "/playlist/detail",
-  "/playlist/track/all": "playlist/track/all",
-  "/artist/detail": "/artist/detail",
-  "/artist/songs": "/artist/songs",
-  "/artist/album": "/artist/album",
-  "/album": "album",
-  "/artist/desc": "/artist/desc",
-  "/artist/mv": "/artist/mv",
-  "/artist/list": "/artist/list",
-  "/playlist/highquality/tags": "/playlist/highquality/tags",
-  "/top/playlist/highquality": "/top/playlist/highquality",
-  "/video/group/list": "/video/group/list",
-  "/video/timeline/all": "/video/timeline/all",
-  "/video/url": "/video/url",
-};
-
-export type apiKeyTypes = keyof typeof apiList;
+export type apiKeyTypes = keyof apiKeyDataType;
 
 export interface apiKeyDataType {
   "countries/code/list": {
@@ -221,5 +183,3 @@ export interface apiKeyDataType {
     code: number;
   };
 }
-
-export default apiList;
