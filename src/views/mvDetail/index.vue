@@ -26,7 +26,9 @@ import { isNull } from "@/utils/common/common";
 const url = ref<IMv | IVideoUrl>();
 const route = useRoute();
 const id = Number(route.query.id);
-const vid = Number(route.query.vid);
+const vid = route.query.vid as string
+
+console.log(route);
 
 const { setSongPlay, setSongPause } = usePlayerStore();
 

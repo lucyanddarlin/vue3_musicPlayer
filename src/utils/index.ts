@@ -202,7 +202,7 @@ export const reqGetTimeLineVideo = (id: number, offset: number = 0) =>
     data: { id, offset },
   });
 
-export const reqGetVideoUrl = (id: number) =>
+export const reqGetVideoUrl = (id: number | string) =>
   axios({
     url: "/video/url",
     data: { id },

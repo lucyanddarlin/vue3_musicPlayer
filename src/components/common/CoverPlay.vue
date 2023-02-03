@@ -28,12 +28,14 @@ import IconPark from "@/components/common/iconPark/index.vue";
 import { PlayOne, Play, Headset } from "@icon-park/vue-next";
 import { useNumberFormat } from "@/utils/common/number";
 
+
 defineProps<{
   pic: string;
   playCount?: number;
   video?: boolean;
   showPlayCount?: boolean;
   name?: string;
+  
 }>();
 </script>
 

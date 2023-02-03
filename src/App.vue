@@ -4,7 +4,6 @@
 
 <script setup lang="ts">
 import { usePlayerInit } from "@/stores/player";
-
 usePlayerInit();
 </script>
 

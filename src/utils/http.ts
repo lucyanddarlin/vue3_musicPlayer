@@ -21,7 +21,7 @@ interface newAxiosInstance extends AxiosInstance {
 }
 
 let http: newAxiosInstance = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "https://music.wanjiacloud.top",
   timeout: 3 * 1000,
   withCredentials: true,
 });
